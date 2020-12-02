@@ -7,12 +7,13 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private string selectableTag = "Selectable";
     [SerializeField] private Material highlightMaterial;
     [SerializeField] private Material defaultMaterial;
+    [SerializeField] private GameObject GreenlandShark;
 
     private Transform _selection;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Screen.lockCursor = true;
     }
 
     // Update is called once per frame
@@ -37,11 +38,26 @@ public class SelectionManager : MonoBehaviour
                 if (selectionRenderer != null)
                 {
                     selectionRenderer.material = highlightMaterial;
+                    if(selection.gameObject.name == "RuleBook")
+                    {
+                        if (Input.GetMouseButtonDown(0))
+                        {
+                            Greenlandshark();
+                        }
+                        
+                    }
                 }
 
                 _selection = selection;
             }
             
         }
+    }
+
+    private void Greenlandshark()
+    {
+        Time.timeScale = 0;
+        Screen.lockCursor = false;
+        GreenlandShark.SetActive(true);
     }
 }
