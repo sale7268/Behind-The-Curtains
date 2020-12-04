@@ -43,6 +43,7 @@ public class SelectionManager : MonoBehaviour
                         if (Input.GetMouseButtonDown(0))
                         {
                             Greenlandshark();
+                            Destroy(selection.gameObject);
                         }
                         
                     }
@@ -59,5 +60,6 @@ public class SelectionManager : MonoBehaviour
         Time.timeScale = 0;
         Screen.lockCursor = false;
         GreenlandShark.SetActive(true);
+        Destroy(GreenlandShark, 2.0f);
     }
 }
