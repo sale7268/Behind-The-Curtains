@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class UI_Interaction : MonoBehaviour
 {
-    private IEnumerator coroutine;
+
+    [Header("Floating Text Prefab")]
+    public GameObject correctFloatingText;
+    public GameObject wrongFloatingText;
 
     [Header("Interaction UI State")]
     [SerializeField] private GameObject GreenlandShark;
@@ -18,19 +21,20 @@ public class UI_Interaction : MonoBehaviour
     public void CorrectAnswer()
     {
         GameObject.Find("ScoreManager").GetComponent<ScoreManager>().IncrementScore();
-        GreenlandSharkText.GetComponent<TMPro.TextMeshProUGUI>().text = correct;
+        Instantiate(correctFloatingText, transform.position, Quaternion.identity);
         UIDisable();
     }
 
     public void FalseAnswer()
     {
         GameObject.Find("ScoreManager").GetComponent<ScoreManager>().IncrementClues();
-        GreenlandSharkText.GetComponent<TMPro.TextMeshProUGUI>().text = wrong;
+        Instantiate(wrongFloatingText, transform.position, Quaternion.identity);
         UIDisable();
     }
 
     public void UIDisable()
     {
+        GreenlandShark.SetActive(false);
         Time.timeScale = 1;
         Screen.lockCursor = true;
     }

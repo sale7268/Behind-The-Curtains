@@ -60,6 +60,5 @@ public class SelectionManager : MonoBehaviour
         Time.timeScale = 0;
         Screen.lockCursor = false;
         GreenlandShark.SetActive(true);
-        Destroy(GreenlandShark, 2.0f);
     }
 }
