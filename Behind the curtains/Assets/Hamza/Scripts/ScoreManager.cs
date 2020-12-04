@@ -7,7 +7,10 @@ public class ScoreManager : MonoBehaviour
     [Header("Score UI")]
     public GameObject scoreText, cluesText;
 
-    private int scoreCount=0, cluesCount=0;
+    public GameObject Key;
+
+
+    public int scoreCount=0, cluesCount=0;
 
     public void IncrementScore()
     {
