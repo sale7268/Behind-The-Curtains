@@ -43,6 +43,7 @@ public class SelectionManager : MonoBehaviour
                         if (Input.GetMouseButtonDown(0))
                         {
                             Greenlandshark();
+                            Destroy(selection.gameObject);
                         }
                         
                     }
