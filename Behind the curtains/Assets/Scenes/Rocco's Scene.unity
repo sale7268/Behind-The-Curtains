@@ -728,7 +728,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 116bb782fc074544ea65474dc7355f53, type: 3}
-<<<<<<< HEAD:Behind the curtains/Assets/Rocco/Rocco's Scene.unity
 --- !u!1 &133602914
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,8 +901,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4020717497503734, guid: 116bb782fc074544ea65474dc7355f53, type: 3}
   m_PrefabInstance: {fileID: 487204538}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> main:Behind the curtains/Assets/Scenes/Rocco's Scene.unity
 --- !u!4 &181631711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4020717497503734, guid: 116bb782fc074544ea65474dc7355f53, type: 3}
@@ -24926,7 +24923,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53486
+  m_Name: pb_Mesh28676
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -77541,7 +77538,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 116bb782fc074544ea65474dc7355f53, type: 3}
-<<<<<<< HEAD:Behind the curtains/Assets/Rocco/Rocco's Scene.unity
 --- !u!4 &2125418833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4020717497503734, guid: 116bb782fc074544ea65474dc7355f53, type: 3}
@@ -77711,62 +77707,3 @@ Mesh:
     offset: 0
     size: 0
     path: 
-=======
---- !u!1001 &1870662683409346688
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4363569620885855888, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_Name
-      value: ThirdPersonCamera_LITE
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 25.086567
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.8048506
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 16.291666
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0013627479
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9818252
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.18965112
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.007069743
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4363569620885855889, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ab9df0a7793c75e4fb308d0ea67c9583, type: 3}
->>>>>>> main:Behind the curtains/Assets/Scenes/Rocco's Scene.unity
