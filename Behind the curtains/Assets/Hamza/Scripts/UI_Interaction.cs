@@ -11,12 +11,12 @@ public class UI_Interaction : MonoBehaviour
 
     [Header("Interaction UI State")]
     [SerializeField] private GameObject GreenlandShark;
+    [SerializeField] private GameObject Honey;
+    [SerializeField] private GameObject Trees;
+    [SerializeField] private GameObject Teeth;
+    [SerializeField] private GameObject Lighter;
+    [SerializeField] private GameObject Kneecap;
 
-    [Header("Interaction UI Text")]
-    [SerializeField] private GameObject GreenlandSharkText;
-
-    string correct = "That is correct!! You have earned 100 points.";
-    string wrong = "That is Wrong!! Try harder next time.";
 
     public void CorrectAnswer()
     {
@@ -35,6 +35,11 @@ public class UI_Interaction : MonoBehaviour
     public void UIDisable()
     {
         GreenlandShark.SetActive(false);
+        Honey.SetActive(false);
+        Trees.SetActive(false);
+        Teeth.SetActive(false);
+        Lighter.SetActive(false);
+        Kneecap.SetActive(false);
         Time.timeScale = 1;
         Screen.lockCursor = true;
     }
