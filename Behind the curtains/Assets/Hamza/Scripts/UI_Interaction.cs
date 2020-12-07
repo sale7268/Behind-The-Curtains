@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI_Interaction : MonoBehaviour
 {
@@ -42,5 +43,6 @@ public class UI_Interaction : MonoBehaviour
         Kneecap.SetActive(false);
         Time.timeScale = 1;
         Screen.lockCursor = true;
+        Cursor.visible = false;
     }
 }
