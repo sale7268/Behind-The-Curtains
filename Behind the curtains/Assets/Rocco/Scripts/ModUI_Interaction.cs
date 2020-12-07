@@ -10,10 +10,6 @@ public class ModUI_Interaction : MonoBehaviour
     [SerializeField] private GameObject Honey;
     [SerializeField] private GameObject Trees;
 
-    public void Continue()
-    {
-        UIDisable();
-    }
     public void UIDisable()
     {
         GreenlandShark.SetActive(false);
@@ -22,5 +18,6 @@ public class ModUI_Interaction : MonoBehaviour
 
         Time.timeScale = 1;
         Screen.lockCursor = true;
+        Cursor.visible = false;
     }
 }
