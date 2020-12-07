@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelectionManager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class SelectionManager : MonoBehaviour
 
     [SerializeField] private GameObject Key;
     [SerializeField] private GameObject keyFloatingText;
+    [SerializeField] private GameObject RestartUI;
 
     public bool keyCollected = false;
 
@@ -33,12 +35,19 @@ public class SelectionManager : MonoBehaviour
     {
         if (GameObject.Find("ScoreManager").GetComponent<ScoreManager>().scoreCount < 299 && GameObject.Find("ScoreManager").GetComponent<ScoreManager>().cluesCount == 6)
         {
-            //TODO: Activate restart button at the bottom right of the screen and pause the game
+            Time.timeScale = 0;
+            Screen.lockCursor = false;
+            Cursor.visible = true;
+            RestartUI.SetActive(true);
         }
 
         if (GameObject.Find("ScoreManager").GetComponent<ScoreManager>().scoreCount >= 300 && GameObject.Find("ScoreManager").GetComponent<ScoreManager>().cluesCount == 6)
         {
-            Key.SetActive(true);
+            if (!keyCollected)
+            {
+                Key.SetActive(true);
+            }
+            
         }
 
         if (_selection != null)
@@ -55,6 +64,13 @@ public class SelectionManager : MonoBehaviour
             var selection = hit.transform;
             if(selection.CompareTag(selectableTag))
             {
+                if (selection.gameObject.name == "TDoor")
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        backToLobby();
+                    }
+                }
                 var selectionRenderer = selection.GetComponent<Renderer>();
                 defaultMaterial = selectionRenderer.material;
                 if (selectionRenderer != null)
@@ -112,7 +128,7 @@ public class SelectionManager : MonoBehaviour
                     {
                         if (Input.GetMouseButtonDown(0))
                         {
-                            Destroy(selection.gameObject);
+                            Key.SetActive(false);
                             KeyF();
                         }
                     }
@@ -123,10 +139,20 @@ public class SelectionManager : MonoBehaviour
         }
     }
 
+
+    private void backToLobby()
+    {
+        Debug.Log("BackToLobbyCalled");
+        if (keyCollected)
+        {
+            SceneManager.LoadScene("Lobby");
+        }
+    }
     private void Greenlandshark()
     {
         Time.timeScale = 0;
         Screen.lockCursor = false;
+        Cursor.visible = true;
         GreenlandShark.SetActive(true);
     }
 
@@ -134,30 +160,35 @@ public class SelectionManager : MonoBehaviour
     {
         Time.timeScale = 0;
         Screen.lockCursor = false;
+        Cursor.visible = true;
         Honey.SetActive(true);
     }
     private void TreesF()
     {
         Time.timeScale = 0;
         Screen.lockCursor = false;
+        Cursor.visible = true;
         Trees.SetActive(true);
     }
     private void TeethF()
     {
         Time.timeScale = 0;
         Screen.lockCursor = false;
+        Cursor.visible = true;
         Teeth.SetActive(true);
     }
     private void LighterF()
     {
         Time.timeScale = 0;
         Screen.lockCursor = false;
+        Cursor.visible = true;
         Lighter.SetActive(true);
     }
     private void KneecapF()
     {
         Time.timeScale = 0;
         Screen.lockCursor = false;
+        Cursor.visible = true;
         Kneecap.SetActive(true);
     }
 
