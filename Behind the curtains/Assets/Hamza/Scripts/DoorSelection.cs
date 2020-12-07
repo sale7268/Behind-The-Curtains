@@ -42,6 +42,13 @@ public class DoorSelection : MonoBehaviour
                         SceneManager.LoadScene("Rocco's Scene");
                     }
                 }
+                if (selection.gameObject.name == "FinalDoor")
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        SceneManager.LoadScene("Lobby");
+                    }
+                }
             }
         }
     }
