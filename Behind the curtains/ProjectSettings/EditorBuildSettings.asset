@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Outside.unity
+    guid: ddfca78939cabdc4e8210baad90f20a8
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: b706123759ca947499dc8153e510b7c2
+  - enabled: 1
+    path: Assets/Scenes/Rocco's Scene.unity
+    guid: 8e8b8936fa45dde408fb2a9e978213fd
+  - enabled: 1
+    path: Assets/Scenes/PirateTavern.unity
+    guid: a446a1007e3e43945950274eff0935ce
   m_configObjects: {}
